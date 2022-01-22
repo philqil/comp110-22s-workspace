@@ -42,6 +42,6 @@ else:
         if count == 4:
             print('4 instances of ' + character_guess + ' found in ' + word)
         if count == 5:
-            print('5 instancess of ' + character_guess + ' found in ' + word)
+            print('5 instances of ' + character_guess + ' found in ' + word)
         if count == 0:
             print('No instances of ' + character_guess + ' found in ' + word)
