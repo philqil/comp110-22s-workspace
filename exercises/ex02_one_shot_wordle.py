@@ -19,7 +19,7 @@ while index < len(word):
         index_2 = 0
         game_over = False
         while not game_over and index_2 < len(word):
-            if word[index] == guess[index_2]:
+            if word[index_2] == guess[index]:
                 game_over = True
             else:
                 index_2 += 1
