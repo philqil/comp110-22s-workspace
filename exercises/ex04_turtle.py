@@ -24,7 +24,7 @@ def main() -> None:
 
 
 def draw_rectangle(leo: Turtle, x: float, y: float, w: float, length: float) -> None:
-    "Draw the base for the flag."
+    """Draw the base for the flag."
     leo.penup()
     leo.goto(x, y) 
     leo.setheading(0.0)
@@ -40,7 +40,7 @@ def draw_rectangle(leo: Turtle, x: float, y: float, w: float, length: float) -> 
 
 
 def draw_triangle(leo: Turtle, x: float, y: float, length: float) -> None:
-    "Draw a triangle."
+    "Draw a triangle."""
     leo.penup()
     leo.goto(x, y) 
     leo.setheading(0.0)
