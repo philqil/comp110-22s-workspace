@@ -14,7 +14,9 @@ def only_evens(xs: list[int]) -> list[int]:
 def sub(xs: list[int], i: int, i2: int) -> list[int]:
     """Make a sublist."""
     a_list: list[int] = list()
-    if i < 0:
+    if len(xs) == 0:
+        return a_list
+    elif i <= 0:
         i = 0
         while i < i2:
             a_list.append(xs[i])
@@ -24,8 +26,14 @@ def sub(xs: list[int], i: int, i2: int) -> list[int]:
         i2 = len(xs)
         while i < i2:
             a_list.append(xs[i])
+            i += 1
         return a_list
-    elif (len(xs) == 0 or i > len(xs) or i2 < 0):
+    elif (i > len(xs) or i2 <= 0):
+        return a_list
+    else:
+        while i < i2:
+            a_list.append(xs[i])
+            i += 1
         return a_list
     return a_list
 
