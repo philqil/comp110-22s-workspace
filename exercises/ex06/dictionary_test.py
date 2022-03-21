@@ -6,7 +6,7 @@ from dictionary import invert, favorite_color, count
 
 def test_invert_empty() -> None:
     """Test invert w empty list."""
-    a = {}
+    a: dict[str, str] = {}
     assert invert(a) == {}
 
 
@@ -24,7 +24,7 @@ def test_invert_many() -> None:
 
 def test_favorite_color_empty() -> None:
     """Test favorite color w  an empty dict."""
-    a = {}
+    a: dict[str, str] = {}
     assert favorite_color(a) == ""
 
 
@@ -35,14 +35,14 @@ def test_favorite_color_one() -> None:
 
 
 def test_favorite_color_many() -> None:
-    """Test favorite color w many elements"""
+    """Test favorite color w many elements."""
     a = {"Mike": "Red", "Nick": "Blue", "Nancy": "Blue"}
     assert favorite_color(a) == "Blue"
 
 
 def test_count_empty() -> None:
     """Test count w empty list."""
-    a = []
+    a: list[str] = []
     assert count(a) == {}
 
 
