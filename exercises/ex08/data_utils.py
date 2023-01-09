@@ -47,7 +47,7 @@ def head(data: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
     for columns in data:
         values: list[str] = []
         i = 0    
-        while i < rows and i < len(data):
+        while i < rows:
             values.append(data[columns][i])
             i += 1
         result[columns] = values
